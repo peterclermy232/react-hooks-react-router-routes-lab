@@ -2,11 +2,11 @@ import React from "react";
 import { actors } from "../data";
 
 const Actors = () => {
-  const actorItems = actors.map((item) => (
-    <div key={item.name}>
-      <h2>{item.name}</h2>
+  const actorItems = actors.map(() => (
+    <div key={actor.name}>
+      <h2>{actor.name}</h2>
       <ul>
-        {item.movies.map((movie) => (
+        {actor.movies.map((movie) => (
           <li key={movie}>{movie}</li>
         ))}
       </ul>
